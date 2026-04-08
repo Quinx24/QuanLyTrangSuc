@@ -38,7 +38,7 @@ function AddMaterialin() {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:8070/materialins", {
+      .post("https://quanlytrangsuc-1.onrender.com/materialins", {
         materialinID: String(inputs.materialinID),
         supplierID: String(inputs.supplierID),
         date: String(inputs.date),

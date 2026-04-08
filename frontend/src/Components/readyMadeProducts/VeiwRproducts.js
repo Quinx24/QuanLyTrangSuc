@@ -85,7 +85,7 @@ const changeHandler=(event)=>{
 
         async function getEachRMproduct(){
 
-           await axios.get(`http://localhost:8070/RMitem/searchitem/${id}`,head).then((res)=>{
+           await axios.get(`https://quanlytrangsuc-1.onrender.com/RMitem/searchitem/${id}`,head).then((res)=>{
 
          
             setRMproduct(res.data);
@@ -107,7 +107,7 @@ getEachRMproduct();
 async function updateProducts(){
 
 
-await axios.put(`http://localhost:8070/RMitem/update/${updatedproduct._id}`,updatedproduct,head).then((res)=>{
+await axios.put(`https://quanlytrangsuc-1.onrender.com/RMitem/update/${updatedproduct._id}`,updatedproduct,head).then((res)=>{
 
  alert("Updated Succsefully");
  

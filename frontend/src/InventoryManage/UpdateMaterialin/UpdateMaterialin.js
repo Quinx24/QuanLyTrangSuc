@@ -13,7 +13,7 @@ function UpdateMaterialin() {
   useEffect(() => {
     const fetchHanlder = async () => {
       await axios
-        .get(`http://localhost:8070/materialins/${id}`)
+        .get(`https://quanlytrangsuc-1.onrender.com/materialins/${id}`)
         .then((res) => res.data)
         .then((data) => setInputs(data.materialin));
     };

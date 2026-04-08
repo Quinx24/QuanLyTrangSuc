@@ -23,7 +23,7 @@ useEffect(()=>{
 //get Category List
 async function getAllCats(){
 
-  await axios.get("http://localhost:8070/showcat/",config).then((res)=>{
+  await axios.get("https://quanlytrangsuc-1.onrender.com/showcat/",config).then((res)=>{
 
 
    setShowCategory(res.data);

@@ -6,7 +6,7 @@ import { Document, Page, Text, View, StyleSheet, PDFDownloadLink } from '@react-
 import AdminSideBar from "../../Components/Admin/AdminComponents/AdminSideBar.js";
 import "./Materials.css"
 
-const URL = "http://localhost:8070/materials";
+const URL = "https://quanlytrangsuc-1.onrender.com/materials";
 const MATERIALS_PER_PAGE = 5;
 
 const fetchHandler = async () => {

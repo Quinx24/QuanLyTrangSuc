@@ -93,7 +93,7 @@ useEffect(()=>{
   //get items from readymadeitems
 async function getEachRMproduct(){
 
-  await axios.get(`http://localhost:8070/RMitem/searchitem/${RMpid}`,config).then((res)=>{
+  await axios.get(`https://quanlytrangsuc-1.onrender.com/RMitem/searchitem/${RMpid}`,config).then((res)=>{
 
 
    setitem(res.data);
@@ -114,7 +114,7 @@ async function getEachRMproduct(){
 //get Category List
 async function getAllCats(){
 
-  await axios.get("http://localhost:8070/showcat/",config).then((res)=>{
+  await axios.get("https://quanlytrangsuc-1.onrender.com/showcat/",config).then((res)=>{
 
 
    setShowCategory(res.data);
@@ -133,7 +133,7 @@ async function getAllCats(){
 
 async function getAllFlists(){
 
-  await axios.get("http://localhost:8070/Flist/",config).then((res)=>{
+  await axios.get("https://quanlytrangsuc-1.onrender.com/Flist/",config).then((res)=>{
 
 
    setflist(res.data);
@@ -213,7 +213,7 @@ if (!newShowcaseProduct.showImg5) {
 //
 console.log(newShowcaseProduct.showThumb_img,newShowcaseProduct.thumb_main);
 
-axios.post("http://localhost:8070/showCitem/addtoShow",newShowcaseProduct).then(()=>{
+axios.post("https://quanlytrangsuc-1.onrender.com/showCitem/addtoShow",newShowcaseProduct).then(()=>{
 
 alert("Item Added");
 window.location.reload();

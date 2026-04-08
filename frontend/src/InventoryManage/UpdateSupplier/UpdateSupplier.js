@@ -13,7 +13,7 @@ function UpdateSupplier() {
   useEffect(() => {
     const fetchHanlder = async () => {
       await axios
-        .get(`http://localhost:8070/suppliers/${id}`)
+        .get(`https://quanlytrangsuc-1.onrender.com/suppliers/${id}`)
         .then((res) => res.data)
         .then((data) => setInputs(data.supplier));
     };

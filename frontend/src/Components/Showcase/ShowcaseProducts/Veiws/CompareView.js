@@ -29,7 +29,7 @@ useEffect(()=>{
 
     async function getEachSCproduct(){
 
-       await axios.get("http://localhost:8070/showCitem/fetchAll",config).then((res)=>{
+       await axios.get("https://quanlytrangsuc-1.onrender.com/showCitem/fetchAll",config).then((res)=>{
     
         setShowcaseProducts(res.data);
 
@@ -61,7 +61,7 @@ useEffect(()=>{
 
 //Fetch Selected Item to Compare
 async function getShowCaseProducts(ID){
-    await axios.get(`http://localhost:8070/showCitem/fetch/${ID}`,config).then((res)=>{
+    await axios.get(`https://quanlytrangsuc-1.onrender.com/showCitem/fetch/${ID}`,config).then((res)=>{
 
         setjewelleryItem(res.data);
      

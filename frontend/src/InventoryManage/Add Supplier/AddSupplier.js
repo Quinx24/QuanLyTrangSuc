@@ -33,7 +33,7 @@ function AddSupplier() {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:8070/suppliers", {
+      .post("https://quanlytrangsuc-1.onrender.com/suppliers", {
         supplierID: String(inputs.supplierID),
         name: String(inputs.name),
         nic: String(inputs.nic),

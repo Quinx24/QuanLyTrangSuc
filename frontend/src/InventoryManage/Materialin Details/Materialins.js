@@ -5,7 +5,7 @@ import Materialin from "../Materialin/Materialin.js";
 import { Document, Page, Text, View, StyleSheet, PDFDownloadLink } from '@react-pdf/renderer';
 import AdminSideBar from "../../Components/Admin/AdminComponents/AdminSideBar.js";
 
-const URL = "http://localhost:8070/materialins";
+const URL = "https://quanlytrangsuc-1.onrender.com/materialins";
 const MATERIALINS_PER_PAGE = 5;
 
 const fetchHandler = async () => {

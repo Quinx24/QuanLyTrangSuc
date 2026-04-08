@@ -5,7 +5,7 @@ import Materialout from "../Materialout/Materialout.js";
 import { Document, Page, Text, View, StyleSheet, PDFDownloadLink } from '@react-pdf/renderer';
 import AdminSideBar from "../../Components/Admin/AdminComponents/AdminSideBar.js";
 
-const URL = "http://localhost:8070/materialouts";
+const URL = "https://quanlytrangsuc-1.onrender.com/materialouts";
 const MATERIALOUTS_PER_PAGE = 5;
 
 const fetchHandler = async () => {

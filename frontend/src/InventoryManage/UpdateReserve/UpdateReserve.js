@@ -13,7 +13,7 @@ function UpdateReserve() {
   useEffect(() => {
     const fetchHanlder = async () => {
       await axios
-        .get(`http://localhost:8070/reserves/${id}`)
+        .get(`https://quanlytrangsuc-1.onrender.com/reserves/${id}`)
         .then((res) => res.data)
         .then((data) => setInputs(data.reserve));
     };

@@ -17,7 +17,7 @@ function Wishlist() {
         try {
             const userId = 1; 
 
-            const response = await axios.get(`http://localhost:8070/wishlist/${user._id}`);
+            const response = await axios.get(`https://quanlytrangsuc-1.onrender.com/wishlist/${user._id}`);
             setWishlistItems(response.data.wishlistItems);
         } catch (error) {
             console.error('Error fetching wishlist items:', error);

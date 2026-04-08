@@ -15,7 +15,7 @@ function Reserve(props) {
     );
     if (confirmDelete) {
       await axios
-        .delete(`http://localhost:8070/reserves/${_id}`)
+        .delete(`https://quanlytrangsuc-1.onrender.com/reserves/${_id}`)
         .then((res) => res.data)
         .then(() => {
           history("/");

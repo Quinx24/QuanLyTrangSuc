@@ -23,7 +23,7 @@ useEffect(()=>{
 
      function getEachSCproduct(){
 
-        axios.get(`http://localhost:8070/showCitem/fetch/${id}`,config).then((res)=>{
+        axios.get(`https://quanlytrangsuc-1.onrender.com/showCitem/fetch/${id}`,config).then((res)=>{
 
   
         setupdatedProduct(res.data);
@@ -41,7 +41,7 @@ useEffect(()=>{
 //get Category List
 async function getAllCats(){
 
-  await axios.get("http://localhost:8070/showcat/",config).then((res)=>{
+  await axios.get("https://quanlytrangsuc-1.onrender.com/showcat/",config).then((res)=>{
 
 
    setShowCategory(res.data);
@@ -60,7 +60,7 @@ async function getAllCats(){
 //get Category List
 async function getAllFlists(){
 
-  await axios.get("http://localhost:8070/Flist/",config).then((res)=>{
+  await axios.get("https://quanlytrangsuc-1.onrender.com/Flist/",config).then((res)=>{
 
 
    setflist(res.data);
@@ -140,7 +140,7 @@ const{name,value}=e.target;
 async function updateProducts(){
 
 
-    await axios.put(`http://localhost:8070/showCitem/update/${updatedProduct._id}`,updatedProduct,config).then((res)=>{
+    await axios.put(`https://quanlytrangsuc-1.onrender.com/showCitem/update/${updatedProduct._id}`,updatedProduct,config).then((res)=>{
     
      alert("Updated Succsefully");
      

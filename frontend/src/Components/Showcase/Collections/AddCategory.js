@@ -100,7 +100,7 @@ if (!newShowcaseCat.Cat_thumbnail) {
 //
 console.log(newShowcaseCat.type,newShowcaseCat.Cat_discrip,newShowcaseCat.Cat_thumbnail);
 
-axios.post("http://localhost:8070/showcat/setcat",newShowcaseCat).then(()=>{
+axios.post("https://quanlytrangsuc-1.onrender.com/showcat/setcat",newShowcaseCat).then(()=>{
 
 alert("Category Added");
 window.location.reload();

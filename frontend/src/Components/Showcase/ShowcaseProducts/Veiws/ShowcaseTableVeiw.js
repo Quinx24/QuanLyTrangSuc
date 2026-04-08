@@ -20,7 +20,7 @@ async function deleteProduct(id){
   };
 
  
-      await axios.delete(`http://localhost:8070/showCitem/delete/${id}`, config).then(() => {
+      await axios.delete(`https://quanlytrangsuc-1.onrender.com/showCitem/delete/${id}`, config).then(() => {
           alert("Product deleted successfully")
           
           window.location.reload();

@@ -5,7 +5,7 @@ import Reserve from "../Reserve/Reserve.js";
 import { Document, Page, Text, View, StyleSheet, PDFDownloadLink } from '@react-pdf/renderer';
 import AdminSideBar from "../../Components/Admin/AdminComponents/AdminSideBar.js";
 
-const URL = "http://localhost:8070/reserves";
+const URL = "https://quanlytrangsuc-1.onrender.com/reserves";
 const RESERVES_PER_PAGE = 5;
 
 const fetchHandler = async () => {

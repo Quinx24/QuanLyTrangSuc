@@ -41,7 +41,7 @@ function AddMaterialout() {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:8070/materialouts", {
+      .post("https://quanlytrangsuc-1.onrender.com/materialouts", {
         materialoutID: String(inputs.materialoutID),
         JobId: String(inputs.JobId),
         date: String(inputs.date),

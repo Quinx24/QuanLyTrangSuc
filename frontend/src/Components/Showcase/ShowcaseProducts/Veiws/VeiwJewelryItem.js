@@ -35,7 +35,7 @@ let timer = ()=>{setTimeout(() => {
 const handleAddToCart = (productId, productTitle) => {
  
 
-  axios.post(`http://localhost:8070/cart/addtocart/${user._id}/${productId}`, {})
+  axios.post(`https://quanlytrangsuc-1.onrender.com/cart/addtocart/${user._id}/${productId}`, {})
       .then((res) => {
         setAlertMessage(`"${productTitle}" added to cart!`);
         setShowAlert(true);
@@ -49,7 +49,7 @@ const handleAddToCart = (productId, productTitle) => {
 
 const handleAddToWishlist = (productId, productTitle) => {
 
-  axios.post(`http://localhost:8070/wishlist/${user._id}/addItem`, { productId })
+  axios.post(`https://quanlytrangsuc-1.onrender.com/wishlist/${user._id}/addItem`, { productId })
       .then((res) => {
           setAlertMessage(`"${productTitle}" added to Wishlist!`);
           setShowAlert(true);
@@ -95,7 +95,7 @@ const config = {
 
     
        async function getShowCaseProducts(){
-            await axios.get(`http://localhost:8070/showCitem/fetch/${id}`,config).then((res)=>{
+            await axios.get(`https://quanlytrangsuc-1.onrender.com/showCitem/fetch/${id}`,config).then((res)=>{
     
                 setjewelleryItem(res.data);
   

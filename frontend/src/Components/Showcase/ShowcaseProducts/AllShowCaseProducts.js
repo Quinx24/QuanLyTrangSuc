@@ -14,7 +14,7 @@ export default function AllShowcaseItems(){
       
     
         function getShowCaseProducts(){
-            axios.get("http://localhost:8070/showCitem/fetchAll").then((res)=>{
+            axios.get("https://quanlytrangsuc-1.onrender.com/showCitem/fetchAll").then((res)=>{
     
                 setShowcaseProducts(res.data);
   

@@ -32,7 +32,7 @@ function Materialout(props) {
     );
     if (confirmDelete) {
       await axios
-        .delete(`http://localhost:8070/materialouts/${_id}`)
+        .delete(`https://quanlytrangsuc-1.onrender.com/materialouts/${_id}`)
         .then((res) => res.data)
         .then(() => {
           history("/");

@@ -68,7 +68,7 @@ const newReadyMadeItem={
 
 };
 
-axios.post("http://localhost:8070/RMitem/addRMitem",newReadyMadeItem).then(()=>{
+axios.post("https://quanlytrangsuc-1.onrender.com/RMitem/addRMitem",newReadyMadeItem).then(()=>{
 
 alert("Item Added");
 window.location.reload();

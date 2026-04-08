@@ -51,7 +51,7 @@ export default function Header(props){
         
         
 
-          const response = await axios.get(`http://localhost:8070/cart/fetchcart/${user._id}`);
+          const response = await axios.get(`https://quanlytrangsuc-1.onrender.com/cart/fetchcart/${user._id}`);
           console.log(response.data);
           
           let arr=response.data.items;

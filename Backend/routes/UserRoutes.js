@@ -26,7 +26,7 @@ router.delete("/:id",requireAuth,UserController.deleteUser);
 
 router.post('/signin',validateSigninRequest,isRequestValidated, UserController.signIn);
 
-router.post('/signup',validateSignupRequest,isRequestValidated,UserController.signUp)
+router.post('/signup',validateSignupRequest,isRequestValidated,UserController.signUp);
 
 /*router.post('/profile',requireSignin,(req,res)=>{
     res.status(200).json({user:'profile'})

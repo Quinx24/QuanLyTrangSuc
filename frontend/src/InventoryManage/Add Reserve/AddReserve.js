@@ -31,7 +31,7 @@ function AddReserve() {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:8070/reserves", {
+      .post("https://quanlytrangsuc-1.onrender.com/reserves", {
         reserveID: String(inputs.reserveID),
         OrderId: String(inputs.OrderId),
         productID: String(inputs.productID),

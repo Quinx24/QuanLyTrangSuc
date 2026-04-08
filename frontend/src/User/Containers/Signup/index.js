@@ -88,7 +88,7 @@ if (password.length < 6) {
     }
     dispatch(signup(user));
     alert("Admin created successfully")
-    window.location.href = 'http://localhost:3000';
+    window.location.href = 'https://quanlytrangsuc-2.onrender.com/';
 
   }
  

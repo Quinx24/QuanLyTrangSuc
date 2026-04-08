@@ -27,7 +27,7 @@ function Material(props) {
     );
     if (confirmDelete) {
       await axios
-        .delete(`http://localhost:8070/materials/${_id}`)
+        .delete(`https://quanlytrangsuc-1.onrender.com/materials/${_id}`)
         .then((res) => res.data)
         .then(() => {
           history("/");

@@ -7,7 +7,7 @@ export const signup = (user) => {
     dispatch({ type: userConstants.USER_REGISTER_REQUEST });
 
     try {
-      const res = await axios.post("http://localhost:8070/users/signup", {
+      const res = await axios.post("https://quanlytrangsuc-1.onrender.com/users/signup", {
         ...user,
       });
 

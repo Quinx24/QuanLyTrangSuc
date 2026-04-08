@@ -24,7 +24,7 @@ useEffect(()=>{
   
 
     function getShowCaseProducts(){
-        axios.get("http://localhost:8070/showCitem/fetchAll").then((res)=>{
+        axios.get("https://quanlytrangsuc-1.onrender.com/showCitem/fetchAll").then((res)=>{
 
             setShowcaseProducts(res.data);
 
@@ -56,7 +56,7 @@ let timer = ()=>{setTimeout(() => {
 const handleAddToWishlist = (productId, productTitle) => {
 
 
-  axios.post(`http://localhost:8070/wishlist/${user._id}/addItem`, { productId })
+  axios.post(`https://quanlytrangsuc-1.onrender.com/wishlist/${user._id}/addItem`, { productId })
       .then((res) => {
           setAlertMessage(`"${productTitle}" added to Wishlist!`);
           setShowAlert(true);

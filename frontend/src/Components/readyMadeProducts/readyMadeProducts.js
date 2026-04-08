@@ -25,7 +25,7 @@ useEffect(()=>{
     console.log(isAdd);
 
     function getRMProducts(){
-        axios.get("http://localhost:8070/RMitem/").then((res)=>{
+        axios.get("https://quanlytrangsuc-1.onrender.com/RMitem/").then((res)=>{
 
             setRMproduct(res.data);
 

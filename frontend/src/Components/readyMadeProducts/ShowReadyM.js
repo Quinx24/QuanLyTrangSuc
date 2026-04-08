@@ -31,7 +31,7 @@ async function deleteProduct(id){
    
   
    
-    await axios.delete(`http://localhost:8070/showCitem/deleteItem/${id}`, config).then(() => {
+    await axios.delete(`https://quanlytrangsuc-1.onrender.com/showCitem/deleteItem/${id}`, config).then(() => {
       alert("Product in Showcase deleted successfully")
       
       
@@ -40,7 +40,7 @@ async function deleteProduct(id){
   })
       
     
-      await axios.delete(`http://localhost:8070/RMitem/deleteRM/${id}`, config).then(() => {
+      await axios.delete(`https://quanlytrangsuc-1.onrender.com/RMitem/deleteRM/${id}`, config).then(() => {
         alert("Product deleted successfully")
         
         window.location.reload();
@@ -66,7 +66,7 @@ async function addP(id){
   let isAvailable;
 
   //Check if the Readymade item is already in the Showcase
-  await axios.get(`http://localhost:8070/showCitem/fetchByItem/${id}`,config).then((res)=>{
+  await axios.get(`https://quanlytrangsuc-1.onrender.com/showCitem/fetchByItem/${id}`,config).then((res)=>{
    
   console.log(res.data.availability);
   isAvailable=(res.data.availability);
