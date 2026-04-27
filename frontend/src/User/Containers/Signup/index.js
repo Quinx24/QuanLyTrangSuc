@@ -88,7 +88,7 @@ if (password.length < 6) {
     }
     dispatch(signup(user));
     alert("Admin created successfully")
-    window.location.href = 'https://quanlytrangsuc-2.onrender.com/';
+    window.location.href = 'https://quanlytrangsuc-2.onrender.com';
 
   }
  

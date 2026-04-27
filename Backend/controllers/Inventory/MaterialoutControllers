@@ -36,7 +36,9 @@ const addMaterialouts = async (req, res, next) => {
     regentdiamond,
     description,
   } = req.body;
+
   let materialouts;
+
   try {
     // Create a new materialout document
     const newMaterialout = new MaterialoutModel({

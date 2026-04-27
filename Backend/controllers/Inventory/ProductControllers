@@ -74,12 +74,13 @@ const updateProduct=async(req,res,next)=>{
     }catch(err){
         console.log(err);
     }
+
     //If can't update product
     if(!products){
         return res.status(404).json({message:"Unable to update product details"});
     }
-    return res.status(200).json({products});
 
+    return res.status(200).json({products});
 }
 
 //Delete product details
@@ -100,7 +101,6 @@ const deleteProduct=async(req,res,next)=>{
         return res.status(404).json({message:"Unable to delete product details"});
     }
     return res.status(200).json({product});
-
 }
 
 

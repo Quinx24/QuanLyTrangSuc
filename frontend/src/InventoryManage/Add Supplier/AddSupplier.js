@@ -32,18 +32,27 @@ function AddSupplier() {
   };
 
   const sendRequest = async () => {
-    await axios
-      .post("https://quanlytrangsuc-1.onrender.com/suppliers", {
-        supplierID: String(inputs.supplierID),
-        name: String(inputs.name),
-        nic: String(inputs.nic),
-        email: String(inputs.email),
-        phone: String(inputs.phone),
-        address: String(inputs.address),
-        bankdetails: String(inputs.bankdetails),
-        description: String(inputs.description),
-      })
-      .then((res) => res.data);
+    try {
+      const res = await axios.post(
+        "http://localhost:8070/suppliers",
+        {
+          supplierID: inputs.supplierID,
+          name: inputs.name,
+          nic: inputs.nic,
+          email: inputs.email,
+          phone: inputs.phone,
+          address: inputs.address,
+          bankdetails: inputs.bankdetails,
+          description: inputs.description,
+        }
+      );
+
+      console.log("SUCCESS:", res.data);
+      return true;
+    } catch (err) {
+      console.error("ERROR:", err.response?.data || err.message);
+      return false;
+    }
   };
 
   return (
