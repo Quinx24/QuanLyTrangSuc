@@ -34,7 +34,7 @@ function AddSupplier() {
   const sendRequest = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:8070/suppliers",
+        "https://quanlytrangsuc-1.onrender.com/suppliers",
         {
           supplierID: inputs.supplierID,
           name: inputs.name,
