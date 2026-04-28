@@ -22,7 +22,7 @@ function UpdateSupplier() {
 
   const sendRequest = async () => {
     await axios
-      .put(`http://localhost:8070/suppliers/${id}`, {
+      .put(`https://quanlytrangsuc-1.onrender.com/suppliers/${id}`, {
         supplierID: String(inputs.supplierID),
         name: String(inputs.name),
         nic: String(inputs.nic),
